@@ -5,8 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test technique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+<div class="loan-calculator">
+    <div class="top">
+        <div class="top-title">
+            <h2>Calcul du TAEG</h2>
+            <img src="./pretto.png" />
+        </div>
+        <form action="#">
+                <div class="group">
+                    <div class="title">Montant emprunté</div>
+                    <input type="text" value="test" class="loan-amount">
+                </div>
+                <div class="group">
+                    <div class="title">Durée d'emprunt(en mois)</div>
+                    <input type="text" value="test" class="loan-time">
+                </div>
+                <div class="group">
+                    <div class="title">Taux nominal</div>
+                    <input type="text" value="test" class="nominal-rate">
+                </div>
+                <div class="group">
+                    <div class="title">Montant emprunté</div>
+                    <input type="text" value="test" class="loan-amount">
+                </div>
+                <div class="group">
+                    <div class="title">Frais de garanties</div>
+                    <input type="text" value="test" class="guarantee-costs">
+                </div>
+                <div class="group">
+                    <div class="title">Frais de dossier et courtage</div>
+                    <input type="text" value="test" class="application-fee">
+                </div>
+                <div class="group">
+                    <div class="title">Taux d'assurance</div>
+                    <input type="text" value="test" class="insurance-rate">
+                </div>
+        </form>
+    </div>
+
+
+    <div class="result">
+        <h3>Mon TAEG est de :</h3>
+        <button class="calculate-btn">Calculer</button>
+        <div class="value">3.50 %</div>
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+    <script src="calcul.js"></script>
 </body>
 </html>
