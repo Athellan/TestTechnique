@@ -7,8 +7,10 @@ const applicationFeeInput = document.querySelector(".application-fee");
 const insuranceInput = document.querySelector(".insurance-rate");
 
 const resultValue = document.querySelector(".result .value");
+const monthlyValue = document.querySelector(".monthly .value");
 
 const calculateBtn = document.querySelector(".calculate-btn");
+
 // -------- -------- --------
 
 // -------- Inputs values --------
@@ -18,6 +20,8 @@ let nominalRate = parseFloat(nominalRateInput.value);
 let guaranteeCosts = parseFloat(guaranteeInput.value);
 let loanapplicationFeeAmount = parseFloat(applicationFeeInput.value);
 let insuranceRate = parseFloat(insuranceInput.value);
+
+let insuranceCost = (insuranceRate * loanAmount * loanTime) / 12;
 // -------- -------- --------
 
 // -------- Functions --------
@@ -40,19 +44,18 @@ const refreshInputValues = () => {
   loanapplicationFeeAmount = parseFloat(applicationFeeInput.value);
   insuranceRate = parseFloat(insuranceInput.value);
 };
+
+const monthlyValueCalcul = () => {
+  let result = add();
+  monthlyValue.innerHTML = (result / 12).toFixed(2);
+};
 // -------- -------- --------
 
 // -------- AEL --------
 calculateBtn.addEventListener("click", () => {
   refreshInputValues();
+  monthlyValueCalcul();
   let result = add();
   resultValue.innerHTML = result;
 });
 // -------- -------- --------
-
-let interestCost = (insuranceRate * loanAmount * loanTime) / 12;
-
-// crédit de 300 000
-// 240 mois (20 ans)
-// frais de garanties 1500€ avec 1.7%
-//
