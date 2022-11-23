@@ -95,9 +95,14 @@
     margin-left: 5px;
 }
 
+#btnContainer {
+display: flex;
+justify-content: center;
+}
 
 .loan-calculator .calculate-btn {
-    margin: 20px 0px 0px 230px;
+    width: 50%;
+    margin-top: 2rem;
     background: #e63946;
     color: #fff;
     border: none;
