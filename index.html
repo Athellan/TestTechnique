@@ -18,45 +18,45 @@
         <form action="#">
                 <div class="group">
                     <div class="title">Montant emprunté</div>
-                    <input type="text" value="" class="loan-amount">
+                    <input id="loan-amount" class="loan-amount">
                 </div>
                 <div class="group">
                     <div class="title">Durée d'emprunt (en mois)</div>
-                    <input type="text" value="" class="loan-time">
+                    <input id="loan-time" class="loan-time">
                 </div>
                 <div class="group">
                     <div class="title">Taux nominal</div>
-                    <input type="text" value="" class="nominal-rate">
+                    <input id="nominal-rate" class="nominal-rate">
                 </div>
                 <div class="group">
                     <div class="title">Frais de garanties</div>
-                    <input type="text" value="" class="guarantee-costs">
+                    <input id="guarantee-costs" class="guarantee-costs">
                 </div>
                 <div class="group">
                     <div class="title">Frais de dossier</div>
-                    <input type="text" value="" class="application-fee">
+                    <input id="application-fee" class="application-fee">
                 </div>
                 <div class="group">
                     <div class="title">Frais de courtage</div>
-                    <input type="text" value="" class="brokerage-fee">
+                    <input id="brokerage-fee" class="brokerage-fee">
                 </div>
                 <div class="group">
                     <div class="title">Taux d'assurance</div>
-                    <input type="text" value="" class="insurance-rate">
+                    <input id="insurance-rate" class="insurance-rate">
                 </div>
         </form>
     </div>
 
-    <button class="calculate-btn">Calculer</button>
+    <button id="calculate-btn" class="calculate-btn">Calculer</button>
 
     <div class="result">
         <h3>Mon TAEG est de :</h3>
-        <div class="value">...</div>
+        <div class="value" id="taeg-result">...</div>
     </div>
     
     <div class="monthly">
         <h3>Mes mensualités sont de :</h3>
-        <div class="value">...</div>
+        <div class="value" id="monthly-result">...</div>
     </div>
 
 
@@ -64,7 +64,7 @@
 </div>
 
 
-
-    <script src="calcul.js"></script>
+    <!-- <script src="calcul.js"></script> -->
+    <script src="calculs.js"></script>
 </body>
 </html>
